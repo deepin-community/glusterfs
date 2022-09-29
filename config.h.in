@@ -1,0 +1,342 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Disable the Gluster memory pooler. */
+#undef GF_DISABLE_MEMPOOL
+
+/* Disable internal tracking of privileged ports. */
+#undef GF_DISABLE_PRIVPORT_TRACKING
+
+/* Enable Brick Mux. */
+#undef GF_ENABLE_BRICKMUX
+
+/* Use our own fusermount */
+#undef GF_FUSERMOUNT
+
+/* define if accept4 exists */
+#undef HAVE_ACCEPT4
+
+/* Define to 1 if you have the <acl/libacl.h> header file. */
+#undef HAVE_ACL_LIBACL_H
+
+/* have argp */
+#undef HAVE_ARGP
+
+/* define if __atomic_*() builtins are available */
+#undef HAVE_ATOMIC_BUILTINS
+
+/* define if found backtrace */
+#undef HAVE_BACKTRACE
+
+/* define if copy_file_range exists */
+#undef HAVE_COPY_FILE_RANGE
+
+/* define if SYS_copy_file_range is available */
+#undef HAVE_COPY_FILE_RANGE_SYS
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the <execinfo.h> header file. */
+#undef HAVE_EXECINFO_H
+
+/* define if fallocate exists */
+#undef HAVE_FALLOCATE
+
+/* define if fdatasync exists */
+#undef HAVE_FDATASYNC
+
+/* Use FUSE notifications */
+#undef HAVE_FUSE_NOTIFICATIONS
+
+/* define if found futimens */
+#undef HAVE_FUTIMENS
+
+/* define if found futimes */
+#undef HAVE_FUTIMES
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* have sys/ioctl.h */
+#undef HAVE_IOCTL_IN_SYS_IOCTL_H
+
+/* "io_uring support" */
+#undef HAVE_IO_URING
+
+/* libaio based POSIX enabled */
+#undef HAVE_LIBAIO
+
+/* Define to 1 if you have the `asan' library (-lasan). */
+#undef HAVE_LIBASAN
+
+/* Define to 1 if you have the `crypto' library (-lcrypto). */
+#undef HAVE_LIBCRYPTO
+
+/* Define to 1 if you have the `dl' library (-ldl). */
+#undef HAVE_LIBDL
+
+/* Define to 1 if you have the `intl' library (-lintl). */
+#undef HAVE_LIBINTL
+
+/* Define to 1 if you have the `pthread' library (-lpthread). */
+#undef HAVE_LIBPTHREAD
+
+/* Define to 1 if you have the `rt' library (-lrt). */
+#undef HAVE_LIBRT
+
+/* Define to 1 if you have the `tcmalloc' library (-ltcmalloc). */
+#undef HAVE_LIBTCMALLOC
+
+/* Using libtirpc */
+#undef HAVE_LIBTIRPC
+
+/* Define to 1 if you have the `tsan' library (-ltsan). */
+#undef HAVE_LIBTSAN
+
+/* Define to 1 if you have the `ubsan' library (-lubsan). */
+#undef HAVE_LIBUBSAN
+
+/* io-uring based POSIX enabled */
+#undef HAVE_LIBURING
+
+/* Define to 1 if you have the <liburing.h> header file. */
+#undef HAVE_LIBURING_H
+
+/* have libuuid.so */
+#undef HAVE_LIBUUID
+
+/* Define to 1 if using libxml2. */
+#undef HAVE_LIB_XML
+
+/* define if found linkat */
+#undef HAVE_LINKAT
+
+/* Define to 1 if you have the <linux/falloc.h> header file. */
+#undef HAVE_LINUX_FALLOC_H
+
+/* Define to 1 if you have the <linux/oom.h> header file. */
+#undef HAVE_LINUX_OOM_H
+
+/* define if llistxattr exists */
+#undef HAVE_LLISTXATTR
+
+/* define if found mallinfo */
+#undef HAVE_MALLINFO
+
+/* define if found mallinfo2 */
+#undef HAVE_MALLINFO2
+
+/* have malloc.h */
+#undef HAVE_MALLOC_H
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have the <openssl/bio.h> header file. */
+#undef HAVE_OPENSSL_BIO_H
+
+/* Define to 1 if you have the <openssl/buffer.h> header file. */
+#undef HAVE_OPENSSL_BUFFER_H
+
+/* Define to 1 if you have the <openssl/dh.h> header file. */
+#undef HAVE_OPENSSL_DH_H
+
+/* Define to 1 if you have the <openssl/ecdh.h> header file. */
+#undef HAVE_OPENSSL_ECDH_H
+
+/* Define to 1 if you have the <openssl/evp.h> header file. */
+#undef HAVE_OPENSSL_EVP_H
+
+/* Define to 1 if you have the <openssl/hmac.h> header file. */
+#undef HAVE_OPENSSL_HMAC_H
+
+/* Define to 1 if you have the <openssl/md5.h> header file. */
+#undef HAVE_OPENSSL_MD5_H
+
+/* define if paccept exists */
+#undef HAVE_PACCEPT
+
+/* define if posix_fallocate exists */
+#undef HAVE_POSIX_FALLOCATE
+
+/* Define if 'pthread_setname_np(thread, name, arg)' is present. */
+#undef HAVE_PTHREAD_SETNAME_NP_THREE_ARGS
+
+/* Define if 'pthread_setname_np(thread, name)' is present. */
+#undef HAVE_PTHREAD_SETNAME_NP_TWO_ARGS
+
+/* Define if 'pthread_set_name_np(thread, name)' is present. */
+#undef HAVE_PTHREAD_SET_NAME_NP
+
+/* Enable CLI readline support. */
+#undef HAVE_READLINE
+
+/* Define to 1 if you have the <rpc/rpc.h> header file. */
+#undef HAVE_RPC_RPC_H
+
+/* define if SEEK_HOLE is available */
+#undef HAVE_SEEK_HOLE
+
+/* define if found setfsuid setfsgid */
+#undef HAVE_SET_FSID
+
+/* define if found OpenSSL SSL_CTX_get0_param */
+#undef HAVE_SSL_CTX_GET0_PARAM
+
+/* Define if C11 _Static_assert is supported. */
+#undef HAVE_STATIC_ASSERT
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* define if found strnlen */
+#undef HAVE_STRNLEN
+
+/* Define to 1 if `st_atimespec.tv_nsec' is a member of `struct stat'. */
+#undef HAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC
+
+/* Define to 1 if `st_atim.tv_nsec' is a member of `struct stat'. */
+#undef HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC
+
+/* define if syncfs exists */
+#undef HAVE_SYNCFS
+
+/* define if SYS_syncfs is available */
+#undef HAVE_SYNCFS_SYS
+
+/* define if __sync_*() builtins are available */
+#undef HAVE_SYNC_BUILTINS
+
+/* Define to 1 if you have the <sys/acl.h> header file. */
+#undef HAVE_SYS_ACL_H
+
+/* Define to 1 if you have the <sys/epoll.h> header file. */
+#undef HAVE_SYS_EPOLL_H
+
+/* Define to 1 if you have the <sys/extattr.h> header file. */
+#undef HAVE_SYS_EXTATTR_H
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#undef HAVE_SYS_IOCTL_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <sys/xattr.h> header file. */
+#undef HAVE_SYS_XATTR_H
+
+/* Using OpenSSL-1.0 TLSv1_2_method */
+#undef HAVE_TLSV1_2_METHOD
+
+/* Using OpenSSL-1.1 TLS_method */
+#undef HAVE_TLS_METHOD
+
+/* Define if tsan API can be used. */
+#undef HAVE_TSAN_API
+
+/* define if found umount2 */
+#undef HAVE_UMOUNT2
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if you have the <urcu-bp.h> header file. */
+#undef HAVE_URCU_BP_H
+
+/* Define to 1 if you have the <urcu/cds.h> header file. */
+#undef HAVE_URCU_CDS_H
+
+/* define if utimensat exists */
+#undef HAVE_UTIMENSAT
+
+/* Define if valgrind API can be used. */
+#undef HAVE_VALGRIND_API
+
+/* Define if zlib is found. */
+#undef HAVE_ZLIB
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#undef LT_OBJDIR
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define if all processes should run under 'valgrind --tool=drd'. */
+#undef RUN_WITH_DRD
+
+/* Define if all processes should run under 'valgrind --tool=memcheck'. */
+#undef RUN_WITH_MEMCHECK
+
+/* The size of `int', as computed by sizeof. */
+#undef SIZEOF_INT
+
+/* The size of `long', as computed by sizeof. */
+#undef SIZEOF_LONG
+
+/* The size of `long long', as computed by sizeof. */
+#undef SIZEOF_LONG_LONG
+
+/* The size of `short', as computed by sizeof. */
+#undef SIZEOF_SHORT
+
+/* Path to OpenSSL trusted certificates. */
+#undef SSL_CERT_PATH
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Define if liburcu 0.6 or 0.7 is found */
+#undef URCU_OLD
+
+/* Defined if using dynamic INTEL AVX code */
+#undef USE_EC_DYNAMIC_AVX
+
+/* Defined if using dynamic ARM NEON code */
+#undef USE_EC_DYNAMIC_NEON
+
+/* Defined if using dynamic INTEL SSE code */
+#undef USE_EC_DYNAMIC_SSE
+
+/* Defined if using dynamic INTEL x64 code */
+#undef USE_EC_DYNAMIC_X64
+
+/* define if events enabled */
+#undef USE_EVENTS
+
+/* Version number of package */
+#undef VERSION
+
+/* Define to 1 if `lex' declares `yytext' as a `char *' by default, not a
+   `char[]'. */
+#undef YYTEXT_POINTER

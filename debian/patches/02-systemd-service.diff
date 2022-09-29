@@ -1,0 +1,34 @@
+# Fix PID file location and add a generic hardening feature.
+# Use another KillMode to fix #995303
+
+diff -Naur glusterfs-9.4.orig/extras/systemd/glusterd.service.in glusterfs-9.4/extras/systemd/glusterd.service.in
+--- glusterfs-9.4.orig/extras/systemd/glusterd.service.in	2021-10-04 08:12:28.733278599 +0200
++++ glusterfs-9.4/extras/systemd/glusterd.service.in	2021-10-14 14:36:54.354153401 +0200
+@@ -9,12 +9,12 @@
+ 
+ [Service]
+ Type=forking
+-PIDFile=@localstatedir@/run/glusterd.pid
++PIDFile=/run/glusterd.pid
+ LimitNOFILE=65536
+ Environment="LOG_LEVEL=INFO"
+ EnvironmentFile=-@SYSCONF_DIR@/sysconfig/glusterd
+ ExecStart=@prefix@/sbin/glusterd -p @localstatedir@/run/glusterd.pid  --log-level $LOG_LEVEL $GLUSTERD_OPTIONS
+-KillMode=process
++KillMode=control-group
+ TimeoutSec=300
+ SuccessExitStatus=15
+ Restart=on-abnormal
+diff -Naur glusterfs-9.4.orig/extras/systemd/glustereventsd.service.in glusterfs-9.4/extras/systemd/glustereventsd.service.in
+--- glusterfs-9.4.orig/extras/systemd/glustereventsd.service.in	2021-10-04 08:12:28.733278599 +0200
++++ glusterfs-9.4/extras/systemd/glustereventsd.service.in	2021-10-14 14:35:19.506642506 +0200
+@@ -10,7 +10,8 @@
+ ExecStart=@SBIN_DIR@/glustereventsd --pid-file @localstatedir@/run/glustereventsd.pid
+ ExecReload=/bin/kill -SIGUSR2 $MAINPID
+ KillMode=control-group
+-PIDFile=@localstatedir@/run/glustereventsd.pid
++PIDFile=/run/glustereventsd.pid
++LimitNOFILE=65536
+ 
+ [Install]
+ WantedBy=multi-user.target

@@ -1,0 +1,32 @@
+glusterfs-common: spelling-error-in-binary usr/lib/*/glusterfs/*/xlator/features/gfid-access.so withthe with the
+glusterfs-common: spelling-error-in-binary usr/lib/*/glusterfs/*/xlator/protocol/server.so ofthe of the
+glusterfs-common: spelling-error-in-binary usr/lib/*/glusterfs/*/xlator/cluster/ec.so onthe on the
+glusterfs-common: spelling-error-in-binary usr/lib/*/glusterfs/*/xlator/mgmt/glusterd.so onthe on the
+glusterfs-common: spelling-error-in-binary usr/lib/*/glusterfs/*/xlator/mgmt/glusterd.so thiks thinks
+glusterfs-common: hardening-no-fortify-functions usr/lib/*/glusterfs/*/xlator/features/cloudsync.so
+glusterfs-common: library-not-linked-against-libc usr/lib/*/glusterfs/*/xlator/mount/api.so
+glusterfs-common: executable-in-usr-lib usr/lib/ocf/resource.d/glusterfs/glusterd
+glusterfs-common: executable-in-usr-lib usr/lib/ocf/resource.d/glusterfs/volume
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/gfevents/glustereventsd.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/gfind_missing_files/gcrawler
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/gfind_missing_files/gfid_to_path.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/gfind_missing_files/gfid_to_path.sh
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/gfind_missing_files/gfind_missing_files.sh
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/glusterfind/S57glusterfind-delete-post.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/glusterfind/brickfind.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/glusterfind/changelog.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/glusterfind/nodeagent.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/gsyncd
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/gverify.sh
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/glfsheal
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/peer_add_secret_pub
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/peer_eventsapi.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/mount-shared-storage.sh
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/peer_georep-sshkey.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/peer_gsec_create
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/peer_mountbroker
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/peer_mountbroker.py
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/set_geo_rep_pem_keys.sh
+glusterfs-common: executable-in-usr-lib usr/lib/ocf/resource.d/heartbeat/*
+glusterfs-common: executable-in-usr-lib usr/lib/*/glusterfs/scripts/*
+glusterfs-common: executable-in-usr-lib usr/lib/*/ganesha/*

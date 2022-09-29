@@ -1,0 +1,2 @@
+glusterfs-server: package-supports-alternative-init-but-no-init.d-script lib/systemd/system/glusterd.service
+glusterfs-server: package-supports-alternative-init-but-no-init.d-script lib/systemd/system/glustereventsd.service
